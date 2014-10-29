@@ -6,7 +6,7 @@ An implementation of CCLayerPanZoom for Cocos2d v3.
 
 Swift example for tiled maps.
 
-1. Add the source files to your project and import them using your bridgin header.
+1. Add the source files to your project and import them using your bridging header.
 
         override init() {
             map = CCTiledMap(file: "world2.tmx")
