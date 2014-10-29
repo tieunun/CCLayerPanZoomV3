@@ -8,14 +8,14 @@ Swift example for tiled maps.
 
 1. Add the source files to your project and import them using your bridgin header.
 
-var winSize:CGSize = CCDirector.sharedDirector().view.frame.size;
-
         override init() {
             map = CCTiledMap(file: "world2.tmx")
             map.anchorPoint = CGPoint(x:0, y:0)
+            
 
             panZoomLayer = CCLayerPanZoom();
             
+            var winSize:CGSize = CCDirector.sharedDirector().view.frame.size;
             var boundingRect:CGRect = CGRectMake(0, 0, 0, 0);
             boundingRect.size = map.boundingBox().size;
             
@@ -34,6 +34,4 @@ var winSize:CGSize = CCDirector.sharedDirector().view.frame.size;
         
             
             self.addChild(panZoomLayer , z:1);
-
-    }
-
+        }
